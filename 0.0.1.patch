@@ -1,0 +1,13 @@
+diff --git a/cpu/BUILD b/cpu/BUILD
+index e06de69..1515369 100644
+--- a/cpu/BUILD
++++ b/cpu/BUILD
+@@ -84,3 +84,8 @@ constraint_value(
+     name = "wasm64",
+     constraint_setting = ":cpu",
+ )
++
++constraint_value(
++    name = "loongarch64",
++    constraint_setting = ":cpu",
++)
