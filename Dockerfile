@@ -26,7 +26,7 @@ ARG PLATFORMS_VERSION=0.0.1
 RUN set -ex \
     && git clone -b ${PLATFORMS_VERSION} --depth=1 https://github.com/bazelbuild/platforms ${WORKDIR}
 
-ADD 0.0.1.patch /opt/BUILD.patch
+ADD 0.0.4.patch /opt/BUILD.patch
 
 WORKDIR ${WORKDIR}
 
