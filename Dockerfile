@@ -21,7 +21,7 @@ RUN set -ex \
     && bazel --version
 
 ARG WORKDIR=/opt/platforms
-ARG PLATFORMS_VERSION=0.0.1
+ARG PLATFORMS_VERSION=0.0.6
 
 RUN set -ex \
     && git clone -b ${PLATFORMS_VERSION} --depth=1 https://github.com/bazelbuild/platforms ${WORKDIR}
